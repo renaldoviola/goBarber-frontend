@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackgroundImg from '../../assets/sign-in-background.png';
+import signUpBackgroundImg from '../../assets/sign-up-background.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -15,6 +15,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  place-content: center;
   width: 100%;
   max-width: 700px;
 
@@ -24,13 +25,13 @@ export const Content = styled.div`
     text-align: center;
 
     h1 {
-      margin-bottom: 15px;
+      margin-bottom: 24px;
     }
 
-    a {
+    > a {
       color: #f4ede8;
       display: block;
-      margin-top: 10px;
+      margin-top: 24px;
       text-decoration: none;
       transition: color 0.2s;
 
@@ -42,8 +43,9 @@ export const Content = styled.div`
 
   /* diretamente do meu content não pega o outro "a"*/
   > a {
-    color: #ff9000;
+    color: #f4ede8;
     display: block;
+    margin-top: 24px;
     text-decoration: none;
     transition: color 0.2s;
 
@@ -55,13 +57,13 @@ export const Content = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#f4ede8')};
     }
   }
 `;
 
 export const Background = styled.div`
   flex: 1; /* Ocupa todo espaço menos o que tiver no max-width */
-  background: url(${signInBackgroundImg}) no-repeat center;
+  background: url(${signUpBackgroundImg}) no-repeat center;
   background-size: cover;
 `;
