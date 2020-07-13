@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
